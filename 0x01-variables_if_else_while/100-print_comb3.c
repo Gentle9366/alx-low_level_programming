@@ -8,15 +8,18 @@
 int main(void)
 {
 int a, b;
-for (a = 1; a <= 2; a++)
+for (a = 1; a <= 8; a++)
+{
+for (b = 1; b <= 8; b++)
+{
+if (a != b)
 {
 putchar(a);
-}
-for (b = 1; b <= 2; b++)
-{
 putchar(b);
 putchar(',');
 putchar(' ');
+}
+}
 }
 putchar('\n');
 return (0);
