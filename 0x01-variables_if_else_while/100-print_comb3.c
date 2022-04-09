@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 /**
  * main - code that prints all possible different combinations of two digits
@@ -8,9 +9,9 @@
 int main(void)
 {
 int a, b;
-for (a = 1; a <= 8; a++)
+for (a = 0; a <= 1; a++)
 {
-for (b = 1; b <= 8; b++)
+for (b = 0; b <= 1; b++)
 {
 if (a != b)
 {
