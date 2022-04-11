@@ -8,16 +8,23 @@
 int main(void)
 {
 int a, b;
-for (a = 0; a <= 1; a++)
+for (a = 48; a <= 57; a++)
 {
-for (b = 0; b <= 1; b++)
+for (b = 48; b <= 57; b++)
 {
-if (a != b)
+if (a != b && b != a)
 {
 putchar(a);
 putchar(b);
+if (a + b == 113 && a == 57)
+{
+break;
+}
+else
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
