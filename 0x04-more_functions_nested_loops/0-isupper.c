@@ -2,7 +2,7 @@
 
 /**
  *_isupper - checks for uppercase character
- *@c the int to print
+ *@c: the int to print
  *Return: 0 if exited properly
  */
 
