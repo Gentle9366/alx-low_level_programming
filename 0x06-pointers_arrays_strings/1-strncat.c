@@ -1,25 +1,26 @@
 #include "main.h"
 /**
- *_strncpy - concatenates two strings
- *@dest: array
- *@src: pointer
+ *_strncat - concatenates two strings
+ *@dest: input parameter string
+ *@src: input parameter string
  *@n: times to iterate
  *Return: dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 int i;
+int j;
 i = 0;
-while (i < n && src[i] != '\0')
+while (dest[i] != 0)
 {
-dest[i] = src[i];
 i++;
 }
-i = i;
-while (i < n)
+j = 0;
+while (src[j] != 0 && j < n)
 {
-dest[i] = '\0';
+dest[i] = src[j];
 i++;
+j++;
 }
 return (dest);
 }
